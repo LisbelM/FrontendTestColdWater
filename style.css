@@ -1,0 +1,89 @@
+* {
+    font-family : "Helvetica";;
+}
+
+.standard-flex {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+body {
+    flex-direction: column;
+}
+
+/*******************/
+/* Glide restyling */
+/*******************/
+.glide {
+    max-width : 1000px;
+}
+
+.glide__slide {
+    box-sizing : border-box;
+    padding : 15px;
+    border : solid rgba(0, 0, 0, 0.1) 1px;
+}
+
+.glide__arrows .glide__arrow--left {
+    color : black;
+}
+
+.glide__arrows .glide__arrow--right {
+    color : black;
+}
+
+/*******************/
+/* Product styling */
+/*******************/
+.product-image img {
+    height : auto;
+    width : 100%;
+    object-fit : cover;
+}
+
+.product-image img:nth-of-type(2) {
+    display : none;
+}
+
+.product-info > * {
+    margin : 10px 0px;
+}
+
+.product-category {
+    color : rgba(0, 0, 0, 0.6);
+    font-size : 12.5px;
+}
+
+.product-name {
+    font-weight : bold;
+    font-size : 12.5px;
+}
+
+.product-price > * {
+    display : inline-block;
+}
+
+.product-price .price {
+    margin-right : auto;
+    font-size : 12.5px;
+    color : rgba(0, 0, 0, 0.8);
+}
+
+.product-price .price .default-price.sale {
+    text-decoration: line-through;
+}
+
+.product-price .price .sale-price {
+    color : #de3d3d;
+}
+
+.product-price .buy-button {
+    float : right;
+    background-color : #de3d3d;
+    color : white;
+    font-size : 12px;
+    padding : 7.5px;
+    border-radius : 7.5px;
+    margin-left : auto;
+}
